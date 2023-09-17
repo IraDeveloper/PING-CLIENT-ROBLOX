@@ -1,0 +1,25 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Players = game:GetService("Players")
+local plr = Players.LocalPlayer
+local chas = plr.Character
+local Window = OrionLib:MakeWindow({Name = "PING CLIENT | (v1.2) | ArmySimulator", HidePremium = false, SaveConfig = true, ConfigFolder = "pingclient_armysim", IntroEnabled = true, IntroText = "PING CLIENT | (v1.2)"})
+
+OrionLib:MakeNotification({
+	Name = "PING CLIENT | (v1.2) | ArmySimulator!",
+	Content = "You are logged in as "..plr.name.."!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local AutoLoot = Window:MakeTab({
+	Name = "AutoLoot",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+AutoLoot:AddButton({
+	Name = "Obstacles | Препятствия",
+	Callback = function()
+      		chas.HumanoidRootPart.Vector3.Position = 485.91815185546875, 9.807830810546875, -336.58209228515625
+  	end    
+})
