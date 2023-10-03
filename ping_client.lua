@@ -1,15 +1,15 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local plr = game.Players.LocalPlayer
-local Window = OrionLib:MakeWindow({Name = "NameHub)", HidePremium = false, SaveConfig = true, ConfigFolder = "nameCFGfolder", IntroEnabled = true, IntroText = "INTRO TEXT - NAME)"})
+local Window = OrionLib:MakeWindow({Name = "NameHub)", HidePremium = false, SaveConfig = true, ConfigFolder = "pingclient_update", IntroEnabled = true, IntroText = "PING CLIENT 1.3")})
 
 OrionLib:MakeNotification({
-	Name = "name hub",
+	Name = "Ping Client",
 	Content = "You are logged in as "..plr.name.."!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 
-_G.Key = "password"
+_G.Key = "pingclient_update"
 _G.KeyInput = "string"
 
 function MakeScriptsHub()
